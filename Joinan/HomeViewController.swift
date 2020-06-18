@@ -12,7 +12,8 @@ import Firebase
 class HomeViewController: UIViewController {
 
     //MARK: -  PROPERTIES
-    let signOutButton = UIButton()
+    
+    let tabBar = UITabBarController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,47 +22,35 @@ class HomeViewController: UIViewController {
         
         print("Home view controller")
         
-        setupSignOutButton()
+        setupTabBar()
     }
     
     //MARK: - SETUP UI
-    func setupSignOutButton() {
-        view.addSubview(signOutButton)
+    func setupTabBar() {
+        view.addSubview(tabBar.view)
         
-        signOutButton.setTitle("Sign Out", for: .normal)
-        signOutButton.setTitleColor(.white, for: .normal)
-        signOutButton.backgroundColor = .red
+        let pelajaranViewController = PelajaranViewController()
+        let kelasSayaViewController = KelasSayaViewController()
+        let profileViewController = ProfileViewController()
         
-        signOutButton.addTarget(self, action: #selector(signOutButtonTapped), for: .touchUpInside)
+        let navigationController1 = UINavigationController(rootViewController: pelajaranViewController)
+        let navigationController2 = UINavigationController(rootViewController: kelasSayaViewController)
+        let navigationController3 = UINavigationController(rootViewController: profileViewController)
         
-        setSignOutButtonConstraints()
+        let item1 = UITabBarItem(title: "Pelajaran", image: UIImage(named: "profileIcon24"), tag: 0)
+        let item2 = UITabBarItem(title: "Kelas Saya", image: UIImage(named: "profileIcon24"), tag: 1)
+        let item3 = UITabBarItem(title: "Profile", image: UIImage(named: "profileIcon24"), tag: 2)
+        
+        navigationController1.tabBarItem = item1
+        navigationController2.tabBarItem = item2
+        navigationController3.tabBarItem = item3
+        
+        tabBar.viewControllers = [navigationController1, navigationController2, navigationController3]
     }
     
     //MARK: - SET CONSTRAINTS
-    func setSignOutButtonConstraints() {
-        signOutButton.translatesAutoresizingMaskIntoConstraints = false
-        signOutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        signOutButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    }
     
     //MARK: - ACTIONS
-    @objc func signOutButtonTapped() {
-        print("sign out button tapped")
-        let firebaseAuth = Auth.auth()
-        
-        do {
-            try firebaseAuth.signOut()
-            
-            let landingPageViewController = LandingPageViewController()
-            let navigationController = UINavigationController(rootViewController: landingPageViewController)
-            
-            //self.navigationController?.present(navigationController, animated: true, completion: nil)
-            
-            self.navigationController?.setViewControllers([landingPageViewController], animated: true)
-            
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
-        }
-    }
+    
 
 }

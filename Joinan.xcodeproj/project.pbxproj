@@ -18,6 +18,9 @@
 		60849AB7249A4AFE0027DBDC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849AB6249A4AFE0027DBDC /* RegisterViewController.swift */; };
 		60849ABD249B01320027DBDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60849ABC249B01320027DBDC /* GoogleService-Info.plist */; };
 		60849ABF249B036D0027DBDC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849ABE249B036D0027DBDC /* HomeViewController.swift */; };
+		60849AC1249B103A0027DBDC /* PelajaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849AC0249B103A0027DBDC /* PelajaranViewController.swift */; };
+		60849AC3249B10850027DBDC /* KelasSayaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849AC2249B10850027DBDC /* KelasSayaViewController.swift */; };
+		60849AC5249B10A80027DBDC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849AC4249B10A80027DBDC /* ProfileViewController.swift */; };
 		60DA9245649B9BF30000A0DE /* Pods_Joinan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB605A557E1926FCB68AC1B /* Pods_Joinan.framework */; };
 		B60ED2BAC38AFE4A93B6BA24 /* Pods_JoinanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2115360B08BE6EB9633E849B /* Pods_JoinanTests.framework */; };
 		BC425377B810CDA152A7BE5D /* Pods_Joinan_JoinanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EC660291247A298BFD5FFE /* Pods_Joinan_JoinanUITests.framework */; };
@@ -60,6 +63,9 @@
 		60849AB6249A4AFE0027DBDC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		60849ABC249B01320027DBDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60849ABE249B036D0027DBDC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		60849AC0249B103A0027DBDC /* PelajaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelajaranViewController.swift; sourceTree = "<group>"; };
+		60849AC2249B10850027DBDC /* KelasSayaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelasSayaViewController.swift; sourceTree = "<group>"; };
+		60849AC4249B10A80027DBDC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8473C9769A035C6CE3C6E54A /* Pods-JoinanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinanTests.release.xcconfig"; path = "Target Support Files/Pods-JoinanTests/Pods-JoinanTests.release.xcconfig"; sourceTree = "<group>"; };
 		90DC7A5D7C84DAA897C86F41 /* Pods-JoinanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinanTests.debug.xcconfig"; path = "Target Support Files/Pods-JoinanTests/Pods-JoinanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95EC660291247A298BFD5FFE /* Pods_Joinan_JoinanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joinan_JoinanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +142,9 @@
 				60849A85249A3A740027DBDC /* LandingPageViewController.swift */,
 				60849AB6249A4AFE0027DBDC /* RegisterViewController.swift */,
 				60849ABE249B036D0027DBDC /* HomeViewController.swift */,
+				60849AC0249B103A0027DBDC /* PelajaranViewController.swift */,
+				60849AC2249B10850027DBDC /* KelasSayaViewController.swift */,
+				60849AC4249B10A80027DBDC /* ProfileViewController.swift */,
 				60849AB4249A47280027DBDC /* LoginViewController.swift */,
 				60849A8D249A3A790027DBDC /* Assets.xcassets */,
 				60849A8F249A3A790027DBDC /* LaunchScreen.storyboard */,
@@ -420,6 +429,9 @@
 				60849AB7249A4AFE0027DBDC /* RegisterViewController.swift in Sources */,
 				60849A8C249A3A740027DBDC /* Joinan.xcdatamodeld in Sources */,
 				60849A86249A3A740027DBDC /* LandingPageViewController.swift in Sources */,
+				60849AC1249B103A0027DBDC /* PelajaranViewController.swift in Sources */,
+				60849AC3249B10850027DBDC /* KelasSayaViewController.swift in Sources */,
+				60849AC5249B10A80027DBDC /* ProfileViewController.swift in Sources */,
 				60849A84249A3A740027DBDC /* AppDelegate.swift in Sources */,
 				60849ABF249B036D0027DBDC /* HomeViewController.swift in Sources */,
 			);
