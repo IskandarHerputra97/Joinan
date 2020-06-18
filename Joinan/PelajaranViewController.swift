@@ -83,4 +83,15 @@ extension PelajaranViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pelajaranDetailNotEnrolledViewController = PelajaranDetailNotEnrolledViewController()
+        
+        
+    self.navigationController?.pushViewController(pelajaranDetailNotEnrolledViewController, animated: true)
+        
+        
+        
+        
+    }
 }
