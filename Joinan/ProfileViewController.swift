@@ -12,7 +12,9 @@ import Firebase
 class ProfileViewController: UIViewController {
 
     //MARK: - PROPERTIES
+    let profileLabel = UILabel()
     let signOutButton = UIButton()
+    var handle: AuthStateDidChangeListenerHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,29 @@ class ProfileViewController: UIViewController {
         title = "Profile"
         view.backgroundColor = .green
         
+        setupProfileLabel()
         setupSignOutButton()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
+            if let user = user {
+                self.profileLabel.text = user.email
+            }
+        })
+    }
+    
     //MARK: - SETUP UI
+    func setupProfileLabel() {
+        view.addSubview(profileLabel)
+        
+        profileLabel.text = "User email here"
+        profileLabel.numberOfLines = 0
+        //profileLabel.textColor = .red
+        
+        setProfileLabelConstraints()
+    }
+    
     func setupSignOutButton() {
         view.addSubview(signOutButton)
         
@@ -38,10 +59,16 @@ class ProfileViewController: UIViewController {
     }
     
     //MARK: - SET CONSTRAINTS
+    func setProfileLabelConstraints() {
+        profileLabel.translatesAutoresizingMaskIntoConstraints = false
+        profileLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profileLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
     func setSignOutButtonConstraints() {
         signOutButton.translatesAutoresizingMaskIntoConstraints = false
         signOutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        signOutButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        signOutButton.topAnchor.constraint(equalTo: profileLabel.bottomAnchor, constant: 20).isActive = true
     }
     
     //MARK: - ACTIONS
