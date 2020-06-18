@@ -85,4 +85,9 @@ extension KelasSayaViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pelajaranDetailEnrolledViewController = PelajaranDetailEnrolledViewController()
+        self.navigationController?.pushViewController(pelajaranDetailEnrolledViewController, animated: true)
+    }
 }
