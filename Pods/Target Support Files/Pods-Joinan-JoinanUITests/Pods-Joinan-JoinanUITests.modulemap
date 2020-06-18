@@ -1,0 +1,6 @@
+framework module Pods_Joinan_JoinanUITests {
+  umbrella header "Pods-Joinan-JoinanUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

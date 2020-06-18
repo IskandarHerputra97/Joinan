@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>961672002452-gup6ah9mvmlnqr89460u1lutj550nbvu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.961672002452-gup6ah9mvmlnqr89460u1lutj550nbvu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBMXBsEra7Wa4QsMUJq34m_0ehWqel1Sbs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>961672002452</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.Joinan</string>
+	<key>PROJECT_ID</key>
+	<string>joinan-659b3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>joinan-659b3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:961672002452:ios:33d53345fd3fc2c9e12d81</string>
+	<key>DATABASE_URL</key>
+	<string>https://joinan-659b3.firebaseio.com</string>
+</dict>
+</plist>
